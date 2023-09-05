@@ -1,0 +1,305 @@
+body {
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Quicksand', sans-serif;
+    color: #2c2c2c;
+    background-color: #f9f9f9;
+	margin: 10px;
+    display:flex;
+    /* align-items:strech; */
+}
+
+span {
+	display: block;
+}
+
+#summary {
+	background-color: #fff;
+	border: 3px solid #fff;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-right: 5px;	
+	-webkit-box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	-moz-box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	width: 430px;
+	min-height: 385px; 
+}
+
+#total {
+	background-color: #fff;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	height: 50px;
+	padding: 10px;
+	color: white;
+	font-weight: 400;
+	font-size: 30px;
+	-webkit-box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	-moz-box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	width: 410px;
+	position: sticky;
+	top: 10px;
+}
+
+.scroll {
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 15px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.offer{
+	border: 1px solid #c3a394;
+	border-radius: 20px;
+	width: 200px;
+	min-height: 380px;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	text-align: center;
+	position: relative;
+	-webkit-box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	-moz-box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+	box-shadow: 0px 0px 10px 0.1px rgba(158,158,158,0.5);
+}
+
+.offer:hover {
+	border: 1px solid #947062;		
+	-webkit-box-shadow: 0px 0px 10px 0.1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px 0.1px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px 0.1px rgba(0,0,0,0.5);
+}
+
+.name {
+	font-family: 'Caprasimo', cursive;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 200px;
+}
+
+.delete, .selectedDelete {
+	color: #d8b9ab;
+	cursor: pointer;
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+}
+
+.selectedDelete:hover {
+	color: #574640;
+	cursor: pointer;
+}
+
+.offerSummary{
+	border: 1px solid #c3a394;
+	border-radius: 10px;
+	width: 95%;
+	height: 30px;
+	padding-top: 10px;
+	margin: 7px 10px;
+	background-color: #fafafa;
+}
+
+span.summary{
+	display: inline-block;
+}
+
+.summaryHeader {
+	color: #2c2c2c;
+	font-size: 30px;
+	font-weight: 600;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.name-summary {
+	padding-left: 10px;
+	font-weight: 600;
+	width: 130px;
+}
+
+.price-summary {
+	font-weight: 600;
+	width: 50px;
+}
+
+.volume-summary {
+	width: 60px;
+	text-align: left;
+}
+
+.pieceWeight-summary {
+	width: 60px;
+	text-align: left;
+}
+
+.quantity-box {
+	width: 90px;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.total {
+	width: 230px;
+	font-weight: 500;
+	color: #2c2c2c;
+}
+
+.order {
+	width: 170px; 
+	border-radius: 15px;
+	background-color: #2c2c2c;
+	text-align: center;
+	cursor: pointer;
+	font-weight: 600;
+	padding: 5px;
+}
+
+.order:hover {
+	background-color: #947062;
+}
+
+.select{
+	color: white;
+	cursor: pointer;
+    position: absolute;
+    bottom: 0;
+	right: 0;
+	margin: 10px;
+	background: rgba(166, 123, 106, .6);
+	padding: 8px;
+	border-radius: 10px;
+	font-weight: 500;
+	width: 60px;
+}
+
+.select:hover {
+	background: rgba(148, 112, 98, .9);
+}
+
+.image-container {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 35px;
+    z-index: -1;
+	overflow: hidden;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+.image {
+	opacity: 1;
+	scale: 1;
+	text-align: center;	
+}
+
+.quantity {
+	display: inline-block;
+}
+
+.quantityNumber {
+	width: 30px;
+}
+
+.quantityMinus {
+	color: #fff;
+	background-color: #a67b6a;
+	display: inline-block;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.quantityPlus {
+	color: #fff;
+	background-color: #a67b6a;
+	display: inline-block;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ingredientsLink{
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background-color: #e2dbd1;
+	color: #fff;
+	border-radius: 15px;	
+	width: 100px;
+	font-size: 15px;
+	cursor: pointer;
+	padding-bottom: 2px;
+	display: block;
+}
+
+.ingredientsList{
+	display: none;
+	text-align: left;
+	background: rgba(226, 219, 209, 0.9);
+	border-radius: 15px;
+	padding: 0px 10px 10px;
+	height: 180px;
+	width: 170px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	margin: 10px;
+	text-align: center;
+}
+
+.closeIngredients {
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: #e2dbd1;
+	background: rgba(166, 123, 106, .4);
+	color: #fff;
+	border-radius: 15px;	
+	width: 20px;
+	font-size: 15px;
+	cursor: pointer;
+	padding-bottom: 2px;
+	text-align: center;
+	display: block;
+}
+.closeIngredients:hover {
+	background: rgba(148, 112, 98, .7);
+}
+
+.allergensAlert{
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+.gluten {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+	opacity: 0.8;
+}
